@@ -4,7 +4,6 @@ using namespace std;
 const int MAX = 100;
 int top = -1;
 
-// Push function
 void push(int stack[], int size, int value) {
     if (top >= size - 1) {
         cout << "Stack Overflow! Cannot push " << value << endl;
@@ -15,7 +14,6 @@ void push(int stack[], int size, int value) {
     }
 }
 
-// Pop function
 void pop(int stack[]) {
     if (top < 0) {
         cout << "Stack Underflow! Nothing to pop" << endl;
@@ -25,7 +23,6 @@ void pop(int stack[]) {
     }
 }
 
-// Display function
 void display(int stack[]) {
     if (top < 0) {
         cout << "Stack is empty" << endl;
@@ -47,7 +44,7 @@ int main() {
         return 1;
     }
 
-    int stack[MAX]; // Fixed-size array
+    int stack[MAX];
 
     int choice, value;
 
