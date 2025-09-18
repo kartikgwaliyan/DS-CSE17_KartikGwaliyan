@@ -12,12 +12,12 @@ int main() {
     for (int i = 0; expr[i] != '\0'; i++) {
         char ch = expr[i];
 
-        // Push opening brackets
+        
         if (ch == '(' || ch == '{' || ch == '[') {
             top++;
             stack[top] = ch;
         }
-        // Check and pop matching closing brackets
+        
         else if (ch == ')' || ch == '}' || ch == ']') {
             if (top == -1) {
                 cout << "Invalid parentheses\n";
